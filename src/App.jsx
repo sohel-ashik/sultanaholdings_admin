@@ -75,6 +75,8 @@ import AvatarPage from './pages/component/AvatarPage';
 import TooltipPage from './pages/component/TooltipPage';
 import AccordionPage from './pages/component/AccordionPage';
 import IconsPage from './pages/component/IconsPage';
+import Home from './allPages/editMainSite/home/Home';
+import About from './allPages/editMainSite/about/About';
 
 function App() {
 
@@ -154,6 +156,10 @@ function App() {
         <Route path="/component/tooltip" element={<TooltipPage />} />
         <Route path="/component/accordion" element={<AccordionPage />} />
         <Route path="/component/icons" element={<IconsPage />} />
+
+
+        <Route path="/edit-main-site/home" element={<Home/>}/>
+        <Route path="/edit-main-site/about" element={<About/>}/>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>
